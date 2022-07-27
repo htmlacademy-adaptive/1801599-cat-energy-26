@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Alina Melikhova](https://up.htmlacademy.ru/adaptive/26/user/1801599).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://github.com/vikitina).
 
 ---
 
