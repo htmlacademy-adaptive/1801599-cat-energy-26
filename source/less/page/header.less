@@ -1,4 +1,30 @@
 .page-header {
-  padding: 20px 10px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 20px 17px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 24px 30px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 110px 53px 110px 30px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

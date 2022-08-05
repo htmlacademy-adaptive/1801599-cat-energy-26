@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -9,28 +10,30 @@
     <!-- Шапка -->
 
     <header class="page-header">
-      <a class="page-header__logo logo" href="#">
-        <img
-          class="logo__icon"
-          src="img/logo-icon.svg"
-          width="34"
-          height="38"
-          alt="Иконка Cat Energy."
-        />
-      </a>
-      <a class="page-header__logo logo" href="#">
-        <img
-          class="logo__text"
-          src="img/logo.svg"
-          width="101"
-          height="18"
-          alt="Cat Energy."
-        />
-      </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggle" type="button">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="#">
+          <img
+            class="logo__icon"
+            src="img/logo-icon.svg"
+            width="34"
+            height="38"
+            alt="Иконка Cat Energy."
+          />
+        </a>
+        <a class="page-header__logo logo" href="#">
+          <img
+            class="logo__text"
+            src="img/logo.svg"
+            width="101"
+            height="18"
+            alt="Cat Energy."
+          />
+        </a>
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="page-nav">
         <div class="page-nav__wrapper">
           <ul class="page-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -191,10 +194,12 @@
 
     <footer class="main-footer">
       <section class="main-footer__invite invite invite--main">
-        <h2 class="invite__title">приглашаем к сотрудничеству дилеров!</h2>
-        <address class="invite__description">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+        <div class="invite__wrapper">
+          <h2 class="invite__title">приглашаем к сотрудничеству дилеров!</h2>
+          <address class="invite__description">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
         <div class="invite__map"></div>
       </section>
       <section class="main-footer__contacts contacts">
