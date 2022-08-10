@@ -1,9 +1,25 @@
+.advantages__size-fix {
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 82px;
+  }
+}
+
 .advantages__list {
   margin: 0 auto;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
@@ -11,28 +27,72 @@
   background-color: #f2f2f2;
   margin: 0;
   margin-bottom: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 316px 53px 52px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 77px 51px 55px 52px;
+    margin-bottom: 0;
+    margin-right: 80px;
+    max-width: 570px;
+  }
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .advantages__title {
   margin: 0;
   padding: 0;
+  padding-left: 71px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
-  text-align: center;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .advantages__description {
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__more {
@@ -43,4 +103,13 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
 }
