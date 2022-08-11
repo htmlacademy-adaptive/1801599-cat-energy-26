@@ -1,14 +1,15 @@
-.cat-info {
-  padding-bottom: 27px;
+.cat-info__size-fix {
+  padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    padding-bottom: 0;
     margin-right: 80px;
+    padding-right: 0;
+    width: auto;
   }
 }
 
@@ -25,14 +26,12 @@
 }
 
 .cat-info__input {
-  padding-top: 12px;
-  padding-bottom: 13px;
   padding-left: 15px;
   margin-left: 13px;
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: @tablet-width) {
-    padding-top: 9px;
-    padding-bottom: 10px;
     padding-left: 18px;
     margin-left: 10px;
   }

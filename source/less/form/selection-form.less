@@ -3,10 +3,22 @@
   padding: 0;
 }
 
+
+.selection-form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 69px;
+  }
+}
+
 .selection-form__unit {
   margin: 0;
   padding: 0;
   border: none;
+  width: auto;
+  flex-grow: 1;
 }
 
 .selection-form__list {
@@ -25,6 +37,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -32,11 +48,13 @@
   }
 }
 
-.selection-form__legend {
+.selection-form__legend-description {
+  display: inline-block;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -49,10 +67,18 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 46px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  appearance: none;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    height: 52px;
   }
 }
 
@@ -61,6 +87,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -73,6 +102,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
