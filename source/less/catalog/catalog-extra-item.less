@@ -1,0 +1,123 @@
+.catalog-extra-item {
+  border-top: 1px solid #cdcdcd;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.catalog-extra-item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.catalog-extra-item__wrapper {
+  padding: 12px 20px 18px;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 38px 28px;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 0 16px;
+    display: grid;
+    grid-template-columns: 650px 245px;
+  }
+}
+
+.catalog-extra-item__information-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+
+.catalog-extra-item__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    max-width: 300px;
+  }
+}
+
+.catalog-extra-item__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 160px 83px;
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 234px 82px;
+    column-gap: 10px;
+    max-width: 350px;
+    padding-top: 6px;
+  }
+}
+
+.catalog-extra-item__definition {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  max-width: 150px;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.catalog-extra-item__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 7px;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px;
+  }
+}
