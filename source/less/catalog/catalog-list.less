@@ -2,6 +2,12 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
 }
 
 .catalog-list__size-fix {
@@ -27,5 +33,11 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+  }
+}
+
+.catalog-list__item-to-all {
+  @media (min-width: @tablet-width) {
+    align-self: end;
   }
 }
