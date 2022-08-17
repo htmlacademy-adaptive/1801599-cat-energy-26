@@ -1,20 +1,8 @@
-.catalog-extra {
-  position: relative;
-}
-
-.catalog-extra::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 50%;
-  background-color: #68b738;
+.catalog-extra__page-layout::before {
   top: 40px;
-  left: 50%;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     top: 89px;
-    left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,11 +54,7 @@
   }
 }
 
-.catalog-extra__title-inner {
-  display: inline-block;
-  padding-right: 22px;
-  background-color: #ffffff;
-
+.catalog-extra__page-layout-title-inner {
   @media (min-width: @tablet-width) {
     padding-left: 37px;
     padding-right: 36px;
@@ -79,9 +63,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 40px;
     padding-right: 35px;
-    margin-left: -40px;
     margin-right: -35px;
   }
 }
