@@ -12,6 +12,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 // .selection-size-fix {
@@ -32,6 +36,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .additional__list {
@@ -44,9 +52,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 221px);
+    column-gap: 104px;
+    row-gap: 30px;
   }
 }
 
@@ -60,7 +69,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 104px;
+    padding: 3px 5px 5px 59px;
   }
 }
 
