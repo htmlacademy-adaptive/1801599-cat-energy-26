@@ -3,10 +3,22 @@
   padding: 0;
 }
 
+
+.selection-form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 69px;
+  }
+}
+
 .selection-form__unit {
   margin: 0;
   padding: 0;
   border: none;
+  width: auto;
+  flex-grow: 1;
 }
 
 .selection-form__list {
@@ -25,13 +37,32 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection-form__legend {
+  margin: 0;
+  padding: 0;
+}
+
+.selection-form__legend-description {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .selection-form__input {
@@ -39,6 +70,19 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 46px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  appearance: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
 }
 
 .selection-form__input::-webkit-input-placeholder {
@@ -46,6 +90,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection-form__input::-moz-placeholder {
@@ -53,16 +105,29 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection-form__required-description {
   margin: 0;
   padding: 0;
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

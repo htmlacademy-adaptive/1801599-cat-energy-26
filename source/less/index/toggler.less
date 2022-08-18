@@ -1,3 +1,44 @@
+.toggler {
+  position: relative;
+  padding: 267px 20px 40px 20px;
+
+
+  @media (min-width: @tablet-width) {
+    padding: 366px 88px 56px 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 357px 110px 65px 193px;
+  }
+}
+
+.toggler__cat-photo {
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 232px;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    top: -170px;
+    left: 100px;
+    width: 592px;
+    height: 511px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -180px;
+    left: 38px;
+    width: 592px;
+    height: 511px;
+  }
+}
+
+.toggler__cat-photo--slim {
+  display: none;
+}
+
 .toggler__description {
   padding: 0;
   margin: 0;

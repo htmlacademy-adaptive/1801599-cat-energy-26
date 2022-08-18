@@ -1,6 +1,61 @@
-.catalog-extra {
-  padding: 25px 20px 35px 20px;
+.catalog-extra__page-layout::before {
+  top: 40px;
+
+  @media (min-width: @tablet-width) {
+    top: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 99px;
+  }
 }
+
+.catalog-extra__size-fix {
+  padding: 25px 0 35px 20px;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 68px 30px 80px 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 76px 110px 80px;
+  }
+}
+
+.catalog-extra__list-size-fix {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.catalog-extra__wrapper {
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 86px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 
 .catalog-extra__title {
   margin: 0;
@@ -9,29 +64,38 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  display: block;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.catalog-extra__page-layout-title-inner {
+  @media (min-width: @tablet-width) {
+    padding-left: 37px;
+    padding-right: 36px;
+    margin-left: -37px;
+    margin-right: -36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 35px;
+    margin-right: -35px;
+  }
 }
 
 .catalog-extra__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
-}
+  box-sizing: border-box;
 
-.catalog-extra__item-title {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.catalog-extra__item-definition {
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
+  @media (min-width: @desktop-width) {
+    width: 896px;
+    padding: 0;
+    margin: 0;
+  }
 }

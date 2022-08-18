@@ -1,0 +1,38 @@
+.page-layout {
+  position: relative;
+}
+
+.page-layout::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  background-color: #68b738;
+  left: 50%;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.page-layout__title-inner {
+  display: inline-block;
+  padding-right: 22px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 39px;
+    padding-right: 40px;
+    margin-left: -39px;
+    margin-right: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}

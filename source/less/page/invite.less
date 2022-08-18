@@ -1,10 +1,29 @@
 .invite {
-  padding: 26px 20px 26px 20px;
-  background-color: #F2F2F2;
+
+  background-color: #f2f2f2;
   color: #111111;
 
   &--main {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+  }
+}
+
+.invite__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding: 56px 40px 56px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-left: 0;
+    width: 565px;
+    min-height: 198px;
   }
 }
 
@@ -15,15 +34,44 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    max-width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 163px;
+  }
 }
 
 .invite__description {
   margin: 0;
   padding: 0;
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    max-width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 163px;
+    text-align: start;
+  }
+}
+
+.invite__city {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    display: block;
+  }
 }
