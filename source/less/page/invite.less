@@ -16,7 +16,7 @@
   padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    padding: 56px 40px 56px 40px;
+    padding: 56px 40px 62px 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,9 +34,10 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  max-width: 140px;
 
   @media (min-width: @tablet-width) {
-    max-width: 172px;
+    max-width: 175px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -55,6 +56,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  max-width: 140px;
 
   @media (min-width: @tablet-width) {
     max-width: 160px;
@@ -73,5 +75,16 @@
   @media (min-width: @tablet-width) {
     margin-top: 20px;
     display: block;
+  }
+}
+
+.invite__map {
+  display: block;
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
   }
 }

@@ -46,9 +46,7 @@
                 </a>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__item-link" href="#">
-                  Подбор программы
-                </a>
+                <a class="site-list__item-link" href="#"> Подбор программы </a>
               </li>
             </ul>
           </div>
@@ -60,20 +58,21 @@
 
     <main class="form-container">
       <section class="selection">
-        <div class="selection__size-fix size-fix selection-size-fix selection-size-fix">
+        <div class="selection__size-fix size-fix">
           <h2 class="selection__title">Подбор программы</h2>
           <p class="selection__description">
-            Заполните анкету, и мы подберем<br>программу питания для вашего кота
+            Заполните анкету, и мы подберем<br />программу питания для вашего
+            кота
           </p>
         </div>
-          <form
-            class="selection__form selection-form"
-            action="https://echo.htmlacademy.ru/"
-            method="get"
-          >
-            <div class="selection-form__wrapper">
-              <fieldset class="selection-form__unit cat-info">
-                <div class="cat-info__size-fix size-fix selection-size-fix">
+        <form
+          class="selection__form selection-form"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
+          <div class="selection-form__wrapper">
+            <fieldset class="selection-form__unit cat-info">
+              <div class="cat-info__size-fix size-fix">
                 <ul class="selection-form__list cat-info__list">
                   <li class="selection-form__item cat-info__item">
                     <label class="selection-form__label cat-info__label">
@@ -117,10 +116,10 @@
                   </li>
                 </ul>
               </div>
-              </fieldset>
+            </fieldset>
 
-              <fieldset class="selection-form__unit programm-info">
-                <div class="programm-info__size-fix size-fix selection-size-fix">
+            <fieldset class="selection-form__unit programm-info">
+              <div class="programm-info__size-fix size-fix">
                 <div class="programm-info__wrapper">
                   <ul class="selection-form__list programm-info__list">
                     <li class="selection-form__item programm-info__item">
@@ -135,8 +134,7 @@
                           checked
                         />
                         <span class="programm-info__mark"></span>
-                        <span
-                          class="programm-info__descriprtion"
+                        <span class="programm-info__descriprtion"
                           >Похудение</span
                         >
                       </label>
@@ -153,8 +151,7 @@
                           value="gain"
                         />
                         <span class="programm-info__mark"></span>
-                        <span
-                          class="programm-info__descriprtion"
+                        <span class="programm-info__descriprtion"
                           >Набор массы</span
                         >
                       </label>
@@ -180,14 +177,19 @@
                   </ul>
                 </div>
               </div>
-              </fieldset>
-            </div>
+            </fieldset>
+          </div>
 
-            <fieldset class="selection-form__unit owner-info owner-info__page-layout page-layout">
-              <div class="owner-info__size-fix size-fix selection-size-fix">
-              <legend class="selection-form__legend owner-info__legend">
-                <span class ="selection-form__legend-description page-layout__title-inner owner-info__page-layout-title-inner">Контактные данные (владельца кота)</span>
-              </legend>
+          <fieldset
+            class="selection-form__unit owner-info owner-info__page-layout page-layout"
+          >
+            <legend class="selection-form__legend owner-info__legend size-fix">
+              <span
+                class="selection-form__legend-description page-layout__title-inner owner-info__page-layout-title-inner"
+                >Контактные данные (владельца кота)</span
+              >
+            </legend>
+            <div class="owner-info__size-fix size-fix">
               <ul class="selection-form__list owner-info__list">
                 <li class="selection-form__item owner-info__item">
                   <label class="selection-form__label owner-info__label">
@@ -246,7 +248,7 @@
                     </svg>
                   </label>
                 </li>
-                <li class="selection-form__item  owner-info__item">
+                <li class="selection-form__item owner-info__item">
                   <label class="selection-form__label owner-info__label">
                     Телефон:*
                     <input
@@ -290,12 +292,18 @@
                 </li>
               </ul>
             </div>
-            </fieldset>
+          </fieldset>
 
-            <fieldset class="selection-form__unit comments comments__page-layout page-layout">
-              <div class="comments__size-fix size-fix selection-size-fix">
-              <legend class="selection-form__legend comments__legend">
-                <span class ="selection-form__legend-description comments__page-layout-title-inner page-layout__title-inner">Комментарий</span>
+          <fieldset
+            class="selection-form__unit comments comments__page-layout page-layout"
+          >
+            <legend class="selection-form__legend comments__legend size-fix">
+              <span
+                class="selection-form__legend-description comments__page-layout-title-inner page-layout__title-inner"
+                >Комментарий</span
+              >
+            </legend>
+            <div class="comments__size-fix size-fix">
               <textarea
                 class="selection-form__input comments__input"
                 rows="7"
@@ -303,18 +311,26 @@
                 id="comment"
                 placeholder="Расскажите обо всех повадках кота"
               ></textarea>
-            </legend>
             </div>
-            </fieldset>
+          </fieldset>
 
-            <fieldset class="selection-form__unit additional additional__page-layout page-layout">
-              <div class="additional__size-fix size-fix selection-size-fix">
-              <legend class="selection-form__legend additional__legend">
-                <span class ="selection-form__legend-description page-layout__title-inner additional__page-layout-title-inner">Дополнительно</span>
-              </legend>
+          <fieldset
+            class="selection-form__unit additional additional__page-layout page-layout"
+          >
+            <legend class="selection-form__legend additional__legend size-fix">
+              <span
+                class="selection-form__legend-description page-layout__title-inner additional__page-layout-title-inner"
+                >Дополнительно</span
+              >
+            </legend>
+            <div class="additional__size-fix size-fix">
               <ul class="selection-form__list additional__list">
-                <li class="selection-form__item additional__item additional__item">
-                  <label class="selection-form__additional  additional__label__label">
+                <li
+                  class="selection-form__item additional__item additional__item"
+                >
+                  <label
+                    class="selection-form__additional additional__label__label"
+                  >
                     <input
                       class="visually-hidden additional__input"
                       type="checkbox"
@@ -329,7 +345,7 @@
                   </label>
                 </li>
                 <li class="selection-form__item additional__item">
-                  <label class="selection-form__additional  additional__label">
+                  <label class="selection-form__additional additional__label">
                     <input
                       class="visually-hidden additional__input"
                       type="checkbox"
@@ -341,7 +357,7 @@
                   </label>
                 </li>
                 <li class="selection-form__item additional__item">
-                  <label class="selection-form__additional  additional__label">
+                  <label class="selection-form__additional additional__label">
                     <input
                       class="visually-hidden additional__input"
                       type="checkbox"
@@ -353,7 +369,7 @@
                   </label>
                 </li>
                 <li class="selection-form__item additional__item">
-                  <label class="selection-form__additional  additional__label">
+                  <label class="selection-form__additional additional__label">
                     <input
                       class="visually-hidden additional__input"
                       type="checkbox"
@@ -366,22 +382,21 @@
                 </li>
               </ul>
             </div>
-            </fieldset>
-            <div class="selection-form__button-wrapper selection-button">
-              <div class="selection-button__size-fix size-fix selection-size-fix">
-            <button
-              class="selection-button__button button button--primary"
-              type="submit"
-            >
-              отправить заявку
-            </button>
-            <p class="selection-button__required-description">
-              * — Обязательные поля
-            </p>
+          </fieldset>
+          <div class="selection-form__button-wrapper selection-button">
+            <div class="selection-button__size-fix size-fix">
+              <button
+                class="selection-button__button button button--primary"
+                type="submit"
+              >
+                отправить заявку
+              </button>
+              <p class="selection-button__required-description">
+                * — Обязательные поля
+              </p>
             </div>
           </div>
-          </form>
-        </div>
+        </form>
       </section>
     </main>
 
