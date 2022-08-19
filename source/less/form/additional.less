@@ -7,7 +7,7 @@
 }
 
 .additional__size-fix {
-  margin-bottom: 41px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
@@ -19,7 +19,7 @@
 }
 
 .additional__legend {
-  margin-bottom: 39px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
@@ -48,8 +48,7 @@
 }
 
 .additional__item {
-  padding-left: 46px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
     padding: 5px 5px 5px 59px;
@@ -63,6 +62,29 @@
 
 .additional__item:last-child {
   margin: 0;
+}
+
+.additional__label {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.additional__mark {
+  .control-mark;
+  margin-right: 16px;
+}
+
+/* stylelint-disable */
+.additional__input:checked+.additional__mark::before {
+  /* stylelint-enable */
+  .control-mark-before;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/tale.svg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .additional__description {

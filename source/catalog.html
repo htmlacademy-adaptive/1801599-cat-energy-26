@@ -10,45 +10,58 @@
     <!-- Шапка -->
 
     <header class="page-header">
-      <div class="page-header__size-fix size-fix">
-        <div class="page-header__wrapper">
-          <a class="page-header__logo logo" href="#">
-            <img
-              class="logo__icon"
-              src="img/logo-icon.svg"
-              width="34"
-              height="38"
-              alt="Иконка Cat Energy."
-            />
-          </a>
-          <a class="page-header__logo logo" href="#">
-            <img
-              class="logo__text"
-              src="img/logo.svg"
-              width="101"
-              height="18"
-              alt="Cat Energy."
-            />
-          </a>
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <div class="page-header__wrapper">
+        <div class="page-header__mobile-wrapper">
+          <div class="page-header__size-fix">
+            <a class="page-header__logo-icon logo-icon" href="#">
+              <img
+                class="logo-icon__img"
+                src="img/logo-icon.svg"
+                width="34"
+                height="38"
+                alt="Иконка Cat Energy."
+              />
+            </a>
+            <a class="page-header__logo-text logo-text" href="index.html">
+              <img
+                class="logo-text__img"
+                src="img/logo.svg"
+                width="101"
+                height="18"
+                alt="Cat Energy."
+              />
+            </a>
+            <button
+              class="page-header__toggle page-header__toggle--close page-header__toggle--opened page-header__toggle--nojs"
+              type="button"
+            >
+              <span class="visually-hidden">Меню</span>
+            </button>
+          </div>
         </div>
-        <nav class="page-nav">
+        <nav class="page-nav page-nav--closed page-nav--nojs">
           <div class="page-nav__wrapper">
             <ul class="page-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__item-link" href="#"> Главная </a>
+              <li class="site-list__item site-list__item--active">
+                <div class="site-list__size-fix">
+                  <a class="site-list__item-link" href="index.html">
+                    Главная
+                  </a>
+                </div>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__item-link" href="catalog.html">
-                  Каталог продукции
-                </a>
+                <div class="site-list__size-fix">
+                  <a class="site-list__item-link" href="#">
+                    Каталог продукции
+                  </a>
+                </div>
               </li>
               <li class="site-list__item">
-                <a class="site-list__item-link" href="form.html">
-                  Подбор программы
-                </a>
+                <div class="site-list__size-fix">
+                  <a class="site-list__item-link" href="form.html">
+                    Подбор программы
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -622,5 +635,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
