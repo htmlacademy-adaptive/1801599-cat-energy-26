@@ -7,6 +7,7 @@
 }
 
 .owner-info__size-fix {
+  .size-fix-form;
   padding-bottom: 23px;
 
   @media (min-width: @tablet-width) {
@@ -20,6 +21,7 @@
 }
 
 .owner-info__legend {
+  .size-fix-form;
   margin-bottom: 34px;
   padding-top: 26px;
 
@@ -67,12 +69,18 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
-    margin-left: 16px;
+    margin-left: 14px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 18px;
     margin-left: 24px;
+  }
+
+  &--email {
+    @media (min-width: @tablet-width) {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -87,7 +95,7 @@
   right: 14px;
 
   @media (min-width: @tablet-width) {
-    right: 18px;
+    right: 15px;
   }
 
   @media (min-width: @desktop-width) {

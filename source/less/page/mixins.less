@@ -1,4 +1,34 @@
-.how-it-works-item-icon {
+.size-fix-form() {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding-left: 70px;
+    padding-right: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.active-link() {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -8px;
+  left: 0;
+  background-color: #68b738;
+}
+
+.how-it-works-item-icon() {
   content: "";
   position: absolute;
   width: 60px;
@@ -19,7 +49,7 @@
   }
 }
 
-.control-mark {
+.control-mark() {
   display: block;
   width: 30px;
   height: 30px;
@@ -27,11 +57,21 @@
   box-sizing: border-box;
   background-color: transparent;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.control-mark-before {
+.control-mark-before() {
   content: "";
   position: absolute;
   top: 25%;
   left: 25%;
+
+  @media (min-width: @tablet-width) {
+    top: 26%;
+    left: 26%;
+  }
 }

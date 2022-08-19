@@ -55,6 +55,7 @@
   margin: 0;
   padding: 0;
   letter-spacing: 0.7px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
@@ -70,10 +71,23 @@
     line-height: 30px;
     letter-spacing: 0;
   }
+
+  &--active::after {
+    @media (min-width: @tablet-width) {
+      .active-link;
+    }
+  }
 }
 
 .site-list__item-link--main {
   @media (min-width: @desktop-width) {
     color: #ffffff;
+  }
+
+  &-active::after {
+    @media (min-width: @desktop-width) {
+      .active-link;
+      background-color: #ffffff;
+    }
   }
 }

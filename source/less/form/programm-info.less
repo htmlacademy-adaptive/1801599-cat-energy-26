@@ -8,8 +8,10 @@
 }
 
 .programm-info__size-fix {
+  .size-fix-form;
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,17 +27,13 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 29px 0 29px 89px;
+    padding: 24px 0 24px 28px;
     border: 1px solid #e7e7e7;
   }
 }
 
 .programm-info__item {
   margin-bottom: 13px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 23px;
-  }
 }
 
 .programm-info__item:last-child {
@@ -65,6 +63,10 @@
   .control-mark;
   border-radius: 50%;
   margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 /* stylelint-disable */
@@ -75,4 +77,9 @@
   height: 14px;
   background-color: #68b738;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
