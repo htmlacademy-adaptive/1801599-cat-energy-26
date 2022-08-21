@@ -45,6 +45,13 @@
   flex-wrap: nowrap;
   align-items: center;
   cursor: pointer;
+
+  &:hover .programm-info__mark,
+  &:focus .programm-info__mark,
+  &:active .programm-info__mark {
+    border: 1px solid #bababa;
+    outline: none;
+  }
 }
 
 .programm-info__descriprtion {
@@ -69,13 +76,17 @@
   }
 }
 
-/* stylelint-disable */
-.programm-info__input:checked+.programm-info__mark::before {
-  /* stylelint-enable */
+.programm-info__input[disabled] ~ .programm-info__mark,
+.programm-info__input[disabled] ~ .programm-info__descriprtion {
+  opacity: 0.3;
+  background-color: #ff0000;
+}
+
+.programm-info__input:checked + .programm-info__mark::before {
   .control-mark-before;
   width: 14px;
   height: 14px;
-  background-color: #68b738;
+  background-color: @primary;
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {

@@ -68,7 +68,7 @@
     height: 60px;
     top: -2px;
     left: 0;
-    background-color: #68b738;
+    background-color: @primary;
 
     @media (min-width: @tablet-width) {
       width: 80px;
@@ -115,7 +115,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      right: 4px;
+      right: 3px;
     }
   }
 
@@ -151,5 +151,13 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.how-it-work__description-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }

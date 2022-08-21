@@ -78,6 +78,24 @@
     line-height: 30px;
     height: 52px;
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:disabled {
+    .opacity-strong;
+  }
 }
 
 .selection-form__input::-webkit-input-placeholder {

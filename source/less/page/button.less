@@ -11,14 +11,39 @@
   text-align: center;
   border: none;
   box-shadow: none;
+  cursor: pointer;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .button--primary {
-  background-color: #68b738;
+  background-color: @primary;
   color: #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #5eaa2f;
+  }
 }
 
 .button--secondary {
   background-color: #f2f2f2;
   color: #444444;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
