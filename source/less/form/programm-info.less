@@ -45,13 +45,13 @@
   flex-wrap: nowrap;
   align-items: center;
   cursor: pointer;
+}
 
-  &:hover .programm-info__mark,
-  &:focus .programm-info__mark,
-  &:active .programm-info__mark {
-    border: 1px solid #bababa;
-    outline: none;
-  }
+.programm-info__control:hover .programm-info__mark,
+.programm-info__control:focus .programm-info__mark,
+.programm-info__control:active .programm-info__mark {
+  outline: none;
+  border: 1px solid #bababa;
 }
 
 .programm-info__descriprtion {
@@ -76,12 +76,6 @@
   }
 }
 
-.programm-info__input[disabled] ~ .programm-info__mark,
-.programm-info__input[disabled] ~ .programm-info__descriprtion {
-  opacity: 0.3;
-  background-color: #ff0000;
-}
-
 .programm-info__input:checked + .programm-info__mark::before {
   .control-mark-before;
   width: 14px;
@@ -93,4 +87,10 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.programm-info__input[disabled] ~ .programm-info__mark,
+.programm-info__input[disabled] ~ .programm-info__descriprtion {
+  cursor: auto;
+  opacity: 0.3;
 }
