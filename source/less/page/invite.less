@@ -1,14 +1,14 @@
 .invite {
-
   background-color: #f2f2f2;
   color: #111111;
+  position: relative;
 
   &--main {
     background-color: #ffffff;
   }
 }
 
-.invite__wrapper {
+.invite__size-fix {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,14 +16,17 @@
   padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    padding: 56px 40px 56px 40px;
+    padding: 58px 70px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 0;
-    padding-left: 0;
-    width: 565px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 58px 80px;
+    max-width: 565px;
     min-height: 198px;
+    background-color: #ffffff;
   }
 }
 
@@ -34,9 +37,10 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  max-width: 140px;
 
   @media (min-width: @tablet-width) {
-    max-width: 172px;
+    max-width: 175px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -55,6 +59,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  max-width: 140px;
 
   @media (min-width: @tablet-width) {
     max-width: 160px;
@@ -64,7 +69,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 163px;
+    max-width: 155px;
     text-align: start;
   }
 }
@@ -73,5 +78,16 @@
   @media (min-width: @tablet-width) {
     margin-top: 20px;
     display: block;
+  }
+}
+
+.invite__map {
+  display: block;
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
   }
 }

@@ -1,0 +1,33 @@
+.logo {
+  &:hover {
+    .opacity-light;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+    .opacity-light;
+  }
+
+  &:active {
+    .opacity;
+  }
+}
+
+.logo__icon {
+  display: block;
+  margin-right: 56px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
+}
+
+.logo__text {
+  margin-top: 6px;
+  margin-right: 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 19px;
+  }
+}

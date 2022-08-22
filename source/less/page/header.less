@@ -1,43 +1,106 @@
-.page-header__size-fix {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 17px;
-  margin: 0 auto;
-
+.page-header__wrapper {
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 35px;
+    margin: 0 auto;
+    padding: 24px 30px;
+    width: 768px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 53px;
-    padding-bottom: 30px;
+    padding: 53px 110px 0;
+    width: 1440px;
   }
 }
 
-.page-header__wrapper {
+.page-header__mobile-wrapper {
+  border-bottom: 1px solid #e6e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.page-header__size-fix {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 0 20px 6px;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
 }
 
-.page-header__logo-icon {
-  margin-right: 56px;
-}
-
-.page-header__logo-text {
-  margin-top: 6px;
-  margin-right: 65px;
+.page-header__logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
 }
 
 .page-header__toggle {
-  width: 24px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .opacity-light;
+    outline: none;
+  }
+
+  &--close::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 13px;
+    right: 0;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  &--opened::after,
+  &--opened::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    top: 19px;
+    right: 0;
+    background-color: #000000;
+  }
+
+  &--opened::after {
+    transform: rotate(-45deg);
+  }
+
+  &--opened::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
 
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &--nojs,
+  &--nojs::before,
+  &--nojs::after {
     display: none;
   }
 }

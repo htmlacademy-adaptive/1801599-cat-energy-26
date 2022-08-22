@@ -10,45 +10,59 @@
     <!-- Шапка -->
 
     <header class="page-header">
-      <div class="page-header__size-fix size-fix">
-        <div class="page-header__wrapper">
-          <a class="page-header__logo logo" href="#">
-            <img
-              class="logo__icon"
-              src="img/logo-icon.svg"
-              width="34"
-              height="38"
-              alt="Иконка Cat Energy."
-            />
-          </a>
-          <a class="page-header__logo logo" href="#">
-            <img
-              class="logo__text"
-              src="img/logo.svg"
-              width="101"
-              height="18"
-              alt="Cat Energy."
-            />
-          </a>
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <div class="page-header__wrapper">
+        <div class="page-header__mobile-wrapper">
+          <div class="page-header__size-fix">
+            <a class="page-header__logo logo" href="#">
+              <img
+                class="logo__icon"
+                src="img/logo-icon.svg"
+                width="34"
+                height="38"
+                alt="Иконка Cat Energy."
+              />
+              <img
+                class="logo__text"
+                src="img/logo.svg"
+                width="101"
+                height="18"
+                alt="Cat Energy."
+              />
+            </a>
+            <button
+              class="page-header__toggle page-header__toggle--close page-header__toggle--opened page-header__toggle--nojs"
+              type="button"
+            >
+              <span class="visually-hidden">Меню</span>
+            </button>
+          </div>
         </div>
-        <nav class="page-nav">
+        <nav class="page-nav page-nav--closed page-nav--nojs">
           <div class="page-nav__wrapper">
             <ul class="page-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__item-link" href="#"> Главная </a>
-              </li>
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__item-link" href="catalog.html">
-                  Каталог продукции
-                </a>
+                <div class="site-list__size-fix">
+                  <a class="site-list__item-link" href="index.html">
+                    Главная
+                  </a>
+                </div>
               </li>
               <li class="site-list__item">
-                <a class="site-list__item-link" href="form.html">
-                  Подбор программы
-                </a>
+                <div class="site-list__size-fix">
+                  <a
+                    class="site-list__item-link site-list__item-link--active"
+                    href="#"
+                  >
+                    Каталог продукции
+                  </a>
+                </div>
+              </li>
+              <li class="site-list__item">
+                <div class="site-list__size-fix">
+                  <a class="site-list__item-link" href="form.html">
+                    Подбор программы
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -501,23 +515,33 @@
     <footer class="main-footer">
       <section class="main-footer__invite invite">
         <div class="invite__size-fix size-fix">
-          <div class="invite__wrapper">
-            <h2 class="invite__title">приглашаем к сотрудничеству дилеров!</h2>
-            <address class="invite__description">
-              ул. Большая Конюшенная, д. 19/8
-              <span class="invite__city">Санкт-Петербург</span>
-            </address>
-          </div>
-          <div class="invite__map"></div>
+          <h2 class="invite__title">
+            приглашаем<br />к сотрудничеству дилеров!
+          </h2>
+          <address class="invite__description">
+            ул. Большая Конюшенная, д. 19/8
+            <span class="invite__city">Санкт-Петербург</span>
+          </address>
+        </div>
+        <div class="invite__map-wrapper">
+          <iframe
+            class="invite__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5940700988788!2d30.32169020073727!3d59.93887771198798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2srs!4v1660862167170!5m2!1sru!2srs"
+            width="320"
+            height="362"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
       <section class="main-footer__contacts contacts">
         <div class="contacts__size-fix size-fix">
           <h2 class="visually-hidden">Контактные данные.</h2>
-          <div class="contacts__cat-energy">
+          <div class="contacts__cat-energy contacts-item">
             <a class="contacts__cat-energy-logo logo" href="#">
               <img
-                class="logo-text"
+                class="contacts__icon"
                 src="img/logo.svg"
                 width="128"
                 height="24"
@@ -526,7 +550,7 @@
             </a>
           </div>
 
-          <div class="contacts__social contacts-social">
+          <div class="contacts__social contacts-social contacts-item">
             <ul class="contacts-social__list">
               <li class="contacts-social__item">
                 <a
@@ -599,7 +623,7 @@
             </ul>
           </div>
 
-          <div class="contacts__copyright copyright">
+          <div class="contacts__copyright copyright contacts-item">
             <a class="copyright__link" href="https://htmlacademy.ru/">
               <span class="copyright__name">HTML Academy</span>
               <svg
@@ -622,5 +646,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

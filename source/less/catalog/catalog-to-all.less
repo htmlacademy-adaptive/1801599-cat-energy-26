@@ -1,6 +1,51 @@
 .catalog-to-all {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 39px;
+    left: 145px;
+    background-color: #d3d3d3;
+
+    @media (min-width: @tablet-width) {
+      width: 60px;
+      height: 2px;
+      top: 80px;
+      left: 129px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 79px;
+      left: 90px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    top: 25px;
+    left: 159px;
+    background-color: #d3d3d3;
+
+    @media (min-width: @tablet-width) {
+      width: 2px;
+      height: 60px;
+      top: 50px;
+      left: 160px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 49px;
+      left: 120px;
+    }
+  }
 }
 
 .catalog-to-all__size-fix {

@@ -10,56 +10,65 @@
     <!-- Шапка -->
 
     <header class="page-header">
-      <div class="page-header__size-fix size-fix">
-        <div class="page-header__wrapper">
-          <a class="page-header__logo-icon logo-icon" href="#">
-            <img
-              class="logo-icon__img"
-              src="img/logo-icon.svg"
-              width="34"
-              height="38"
-              alt="Иконка Cat Energy."
-            />
-          </a>
-          <a class="page-header__logo-text logo-text" href="#">
-            <img
-              class="logo-text__img"
-              src="img/logo.svg"
-              width="101"
-              height="18"
-              alt="Cat Energy."
-            />
-          </a>
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <div class="page-header__wrapper">
+        <div class="page-header__mobile-wrapper">
+          <div class="page-header__size-fix">
+            <a class="page-header__logo logo" href="#">
+              <img
+                class="logo__icon"
+                src="img/logo-icon.svg"
+                width="34"
+                height="38"
+                alt="Иконка Cat Energy."
+              />
+              <img
+                class="logo__text"
+                src="img/logo.svg"
+                width="101"
+                height="18"
+                alt="Cat Energy."
+              />
+            </a>
+            <button
+              class="page-header__toggle page-header__toggle--close page-header__toggle--opened page-header__toggle--nojs"
+              type="button"
+            >
+              <span class="visually-hidden">Меню</span>
+            </button>
+          </div>
         </div>
-        <nav class="page-nav">
+        <nav class="page-nav page-nav--closed page-nav--nojs">
           <div class="page-nav__wrapper">
             <ul class="page-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a
-                  class="site-list__item-link site-list__item-link--main"
-                  href="#"
-                >
-                  Главная
-                </a>
+              <li class="site-list__item">
+                <div class="site-list__size-fix">
+                  <a
+                    class="site-list__item-link site-list__item-link--main site-list__item-link--active site-list__item-link--main-active"
+                    href="#"
+                  >
+                    Главная
+                  </a>
+                </div>
               </li>
               <li class="site-list__item">
-                <a
-                  class="site-list__item-link site-list__item-link--main"
-                  href="catalog.html"
-                >
-                  Каталог продукции
-                </a>
+                <div class="site-list__size-fix">
+                  <a
+                    class="site-list__item-link site-list__item-link--main"
+                    href="catalog.html"
+                  >
+                    Каталог продукции
+                  </a>
+                </div>
               </li>
               <li class="site-list__item">
-                <a
-                  class="site-list__item-link site-list__item-link--main"
-                  href="form.html"
-                >
-                  Подбор программы
-                </a>
+                <div class="site-list__size-fix">
+                  <a
+                    class="site-list__item-link site-list__item-link--main"
+                    href="form.html"
+                  >
+                    Подбор программы
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -90,7 +99,19 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="advantages__more" href="#"> каталог slim </a>
+              <a class="advantages__more" href="#">
+                <span class="advantages__more-description">каталог slim</span>
+                <svg
+                  class="advantages__more-icon"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 12"
+                  width="24"
+                >
+                  <path stroke="#000" stroke-width="2" d="M0 6h18" />
+                  <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
+                </svg>
+              </a>
             </li>
             <li class="advantages__item advantages__item--pro">
               <h3 class="advantages__title">Набор массы</h3>
@@ -98,7 +119,19 @@
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="advantages__more" href="#">каталог pro </a>
+              <a class="advantages__more" href="#">
+                <span class="advantages__more-description">каталог pro</span>
+                <svg
+                  class="advantages__more-icon"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 12"
+                  width="24"
+                >
+                  <path stroke="#000" stroke-width="2" d="M0 6h18" />
+                  <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -106,7 +139,7 @@
       <section class="how-it-works">
         <div class="how-it-works__size-fix size-fix">
           <h2 class="how-it-works__title">Как это работает</h2>
-          <ul class="how-it-works__list">
+          <ol class="how-it-works__list">
             <li class="how-it-works__item how-it-works__item--healthy">
               <p class="how-it-works__description">
                 Функциональное питание содержит только полезные питательные
@@ -127,11 +160,11 @@
             </li>
             <li class="how-it-works__item how-it-works__item--improvement">
               <p class="how-it-works__description">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего
-                питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему
+                <br class="how-it-work__description-break" />вашего питомца!
               </p>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
       <section class="example">
@@ -179,14 +212,24 @@
     <footer class="main-footer">
       <section class="main-footer__invite invite invite--main">
         <div class="invite__size-fix size-fix">
-          <div class="invite__wrapper">
-            <h2 class="invite__title">приглашаем к сотрудничеству дилеров!</h2>
-            <address class="invite__description">
-              ул. Большая Конюшенная, д. 19/8
-              <span class="invite__city">Санкт-Петербург</span>
-            </address>
-          </div>
-          <div class="invite__map"></div>
+          <h2 class="invite__title">
+            приглашаем<br />к сотрудничеству дилеров!
+          </h2>
+          <address class="invite__description">
+            ул. Большая Конюшенная, д. 19/8
+            <span class="invite__city">Санкт-Петербург</span>
+          </address>
+        </div>
+        <div class="invite__map-wrapper">
+          <iframe
+            class="invite__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5940700988788!2d30.32169020073727!3d59.93887771198798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2srs!4v1660862167170!5m2!1sru!2srs"
+            width="320"
+            height="362"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
       <section class="main-footer__contacts contacts">
@@ -195,7 +238,7 @@
           <div class="contacts__cat-energy contacts-item">
             <a class="contacts__cat-energy-logo logo" href="#">
               <img
-                class="logo-text"
+                class="contacts__icon"
                 src="img/logo.svg"
                 width="128"
                 height="24"
@@ -300,5 +343,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

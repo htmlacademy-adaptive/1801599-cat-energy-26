@@ -8,8 +8,10 @@
 }
 
 .programm-info__size-fix {
+  .size-fix-form;
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 75px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,25 +23,35 @@
 }
 
 .programm-info__wrapper {
-  padding: 29px 0 25px 45px;
+  padding: 22px 0 18px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 29px 0 29px 89px;
+    padding: 24px 0 24px 28px;
     border: 1px solid #e7e7e7;
   }
 }
 
 .programm-info__item {
-  margin-bottom: 24px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 23px;
-  }
+  margin-bottom: 13px;
 }
 
 .programm-info__item:last-child {
   margin-bottom: 0;
+}
+
+.programm-info__control {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.programm-info__control:hover .programm-info__mark,
+.programm-info__control:focus .programm-info__mark,
+.programm-info__control:active .programm-info__mark {
+  outline: none;
+  border: 1px solid #bababa;
 }
 
 .programm-info__descriprtion {
@@ -52,4 +64,33 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.programm-info__mark {
+  .control-mark;
+  border-radius: 50%;
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.programm-info__input:checked + .programm-info__mark::before {
+  .control-mark-before;
+  width: 14px;
+  height: 14px;
+  background-color: @primary;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.programm-info__input[disabled] ~ .programm-info__mark,
+.programm-info__input[disabled] ~ .programm-info__descriprtion {
+  cursor: auto;
+  opacity: 0.3;
 }

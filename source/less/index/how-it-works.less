@@ -6,7 +6,7 @@
 
 .how-it-works__size-fix {
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 53px;
 
   @media (min-width: @tablet-width) {
     padding-top: 45px;
@@ -21,7 +21,7 @@
 
 .how-it-works__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding: 0;
   font-size: 36px;
   line-height: 40px;
@@ -39,6 +39,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: section;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -48,17 +49,75 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 75px;
+    row-gap: 30px;
   }
 }
 
 .how-it-works__item {
   padding-left: 80px;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -2px;
+    left: 0;
+    background-color: @primary;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+    }
+  }
+
+  &--healthy::before {
+    .how-it-works-item-icon;
+    background-image: url("../img/icon-leaf.svg");
+  }
+
+  &--powder::before {
+    .how-it-works-item-icon;
+    background-image: url("../img/icon-powder.svg");
+  }
+
+  &--diet::before {
+    .how-it-works-item-icon;
+    background-image: url("../img/icon-food.svg");
+  }
+
+  &--improvement::before {
+    .how-it-works-item-icon;
+    background-image: url("../img/icon-alarm.svg");
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: counter(section);
+      counter-increment: section;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 280px;
+      width: auto;
+      height: auto;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 3px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 250px;
@@ -66,6 +125,12 @@
     padding-top: 151px;
     padding-bottom: 57px;
     padding-left: 0;
+  }
+}
+
+.how-it-works__item:first-child::after {
+  @media (min-width: @tablet-width) {
+    right: 25px;
   }
 }
 
@@ -86,5 +151,13 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.how-it-work__description-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }
