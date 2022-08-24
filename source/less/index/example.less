@@ -31,7 +31,7 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 43px;
-    padding-bottom: 98px;
+    padding-bottom: 99px;
     position: relative;
   }
 
@@ -40,7 +40,7 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 65px;
+    padding-bottom: 67px;
     position: relative;
   }
 }
@@ -237,27 +237,109 @@
 }
 
 
-.example__cat-slider {
-  height: 256px;
+.example__slider {
   position: relative;
 
   @media (min-width: @tablet-width) {
-    height: 512px;
+    width: 560px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 560px;
+    margin: 0;
   }
 }
 
-.example__cat-slider-wrapper {
-  width: 50%;
-  overflow: hidden;
-  z-index: 2;
+.example__slider-control {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  margin-left: -2px;
+  background-color: #666666;
+  border-radius: 2px;
+  z-index: 1;
+
+  &:hover {
+    background-color: @primary;
+  }
+
+  &:hover .example__slider-control-toggler {
+    border-color: @primary;
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:active .example__slider-control-toggler {
+    border-color: rgba(94, 170, 47, 0.6);
+  }
 }
 
-.example-skinny-cat {
+.example__slider-control-toggler {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  background: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+
+  &:focus {
+    outline: none;
+    border-color: @primary;
+  }
+}
+
+.example__slider-control-toggler-arrows {
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -12px;
+}
+
+.example__slider-control-toggler:hover ~ .example__slider-control-toggler-arrows {
+  fill: @primary;
+}
+
+.example__fat-cat-wrapper {
+  width: 50%;
+  overflow: hidden;
+}
+
+.example__fat-cat {
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.example__skinny-cat-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+}
+
+.example__skinny-cat {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
