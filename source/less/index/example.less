@@ -86,7 +86,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 51px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -136,14 +136,14 @@
 
   @media (min-width: @tablet-width) {
     width: 162px;
-    height: 77px;
+    height: 72px;
     margin-bottom: 0;
     font-size: 30px;
     line-height: 37px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 59px;
   }
 }
 
@@ -206,6 +206,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    letter-spacing: 0.2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -221,7 +222,7 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
-    margin-right: 63px;
+    margin-right: 57px;
   }
 }
 
@@ -238,7 +239,7 @@
 
 .example__cat-slider {
   height: 256px;
-  background-color: #ffa500;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     height: 512px;
@@ -247,4 +248,16 @@
   @media (min-width: @desktop-width) {
     width: 560px;
   }
+}
+
+.example__cat-slider-wrapper {
+  width: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.example-skinny-cat {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

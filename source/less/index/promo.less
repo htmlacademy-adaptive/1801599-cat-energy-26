@@ -1,3 +1,7 @@
+.promo {
+  position: relative;
+}
+
 .promo__size-fix {
   min-height: 480px;
   display: flex;
@@ -6,19 +10,19 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    min-height: 860px;
-    padding-top: 50px;
+    min-height: 850px;
+    padding-top: 40px;
     padding-left: 118px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 736px;
-    padding-top: 265px;
+    padding-top: 251px;
     padding-left: 190px;
   }
 }
 
-.promo__size-fix::before {
+.promo::before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,6 +34,11 @@
   background-image: url("../img/licking-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/licking-cat-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -37,13 +46,18 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    left: 720px;
-    width: 720px;
-    height: 736px;
+    right: 0;
+    left: auto;
+    width: 50%;
+    height: 723px;
     background-image: url("../img/licking-cat-desktop.jpg");
     z-index: -1;
     background-size: 100%;
-    background-position-y: 42px;
+    background-position-y: 29px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/licking-cat-desktop@2x.jpg");
+    }
   }
 }
 
@@ -55,17 +69,25 @@
   display: block;
   width: 280px;
   height: 270px;
-  background-image: url("../img/main-product-mob.png");
+  background-image: url("../img/../img/main-product-mob.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-product-mob@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/main-product-tablet.png");
     width: 709px;
-    height: 609px;
-    top: 251px;
+    height: 599px;
+    top: 241px;
     left: 29px;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-product-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -73,8 +95,12 @@
     width: 552px;
     height: 499px;
     left: 558px;
-    top: 183px;
+    top: 170px;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-product-desktop@2x.png");
+    }
   }
 }
 

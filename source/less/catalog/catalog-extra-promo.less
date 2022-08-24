@@ -26,15 +26,27 @@
   color: #ffffff;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/extra-promo-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     padding: 71px 124px 69px 422px;
     background-image: url("../img/extra-promo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/extra-promo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 185px 43px 42px 41px;
     background-image: url("../img/extra-promo-desktop.jpg");
     max-width: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/extra-promo-desktop@2x.jpg");
+    }
   }
 
   &::before {
