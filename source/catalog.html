@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <!-- Шапка -->
@@ -14,16 +18,26 @@
         <div class="page-header__mobile-wrapper">
           <div class="page-header__size-fix">
             <a class="page-header__logo logo" href="#">
-              <img
-                class="logo__icon"
-                src="img/logo-icon.svg"
-                width="34"
-                height="38"
-                alt="Иконка Cat Energy."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="img/logo-desktop.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/logo-tablet.svg"
+                />
+                <img
+                  class="logo__icon"
+                  src="img/logo-mob.svg"
+                  width="34"
+                  height="38"
+                  alt="Иконка Cat Energy."
+                />
+              </picture>
               <img
                 class="logo__text"
-                src="img/logo.svg"
+                src="img/logo-text.svg"
                 width="101"
                 height="18"
                 alt="Cat Energy."
@@ -82,13 +96,32 @@
               <div class="catalog-item__size-fix catalog-item">
                 <div class="catalog-item__wrapper">
                   <a class="catalog-item__img-link" href="#">
-                    <img
-                      class="catalog-item__img"
-                      src="img/foodcan-chicken-s.png"
-                      alt="Питание Cat Energy Курица 500 грамм."
-                      width="68"
-                      height="86"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/catalog-items/dt-size/foodcan-chicken-s-dt.png    1x,
+                          img/catalog-items/dt-size/foodcan-chicken-s-dt@2x.png 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/catalog-items/tab-size/foodcan-chicken-s-tab.png    1x,
+                          img/catalog-items/tab-size/foodcan-chicken-s-tab@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="catalog-item__img"
+                        src="img/catalog-items/mob-size/foodcan-chicken-s-mob.png"
+                        alt="Питание Cat Energy Курица 500 грамм."
+                        width="140"
+                        height="112"
+                        srcset="
+                          img/catalog-items/mob-size/foodcan-chicken-s-mob@2x.png 2x
+                        "
+                      />
+                    </picture>
                   </a>
                   <div class="catalog-item__information-wrapper">
                     <a class="catalog-item__title" href="#"
@@ -122,17 +155,33 @@
             <li class="catalog-list__item">
               <div class="catalog-item__size-fix catalog-item">
                 <div class="catalog-item__wrapper">
-                  <a
-                    class="catalog-item__img-link catalog-item-img-link"
-                    href="#"
-                  >
-                    <img
-                      class="catalog-item__img"
-                      src="img/foodcan-chicken-l.png"
-                      alt="Питание Cat Energy Курица 500 грамм."
-                      width="84"
-                      height="101"
-                    />
+                  <a class="catalog-item__img-link" href="#">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/catalog-items/dt-size/foodcan-chicken-l-dt.png    1x,
+                          img/catalog-items/dt-size/foodcan-chicken-l-dt@2x.png 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/catalog-items/tab-size/foodcan-chicken-l-tab.png    1x,
+                          img/catalog-items/tab-size/foodcan-chicken-l-tab@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="catalog-item__img"
+                        src="img/catalog-items/mob-size/foodcan-chicken-l-mob.png"
+                        alt="Питание Cat Energy Курица 1000 грамм."
+                        width="140"
+                        height="112"
+                        srcset="
+                          img/catalog-items/mob-size/foodcan-chicken-l-mob@2x.png 2x
+                        "
+                      />
+                    </picture>
                   </a>
                   <div class="catalog-item__information-wrapper">
                     <a class="catalog-item__title" href="#"
@@ -166,17 +215,33 @@
             <li class="catalog-list__item">
               <div class="catalog-item__size-fix catalog-item">
                 <div class="catalog-item__wrapper">
-                  <a
-                    class="catalog-item__img-link catalog-item-img-link"
-                    href="#"
-                  >
-                    <img
-                      class="catalog-item__img"
-                      src="img/foodcan-fish-s.png"
-                      alt="Питание Cat Energy Рыба 500 грамм."
-                      width="68"
-                      height="78"
-                    />
+                  <a class="catalog-item__img-link" href="#">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/catalog-items/dt-size/foodcan-cfish-s-dt.png   1x,
+                          img/catalog-items/dt-size/foodcan-fish-s-dt@2x.png 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/catalog-items/tab-size/foodcan-fish-s-tab.png    1x,
+                          img/catalog-items/tab-size/foodcan-fish-s-tab@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="catalog-item__img"
+                        src="img/catalog-items/mob-size/foodcan-fish-s-mob.png"
+                        alt="Питание Cat Energy Рыба 500 грамм."
+                        width="140"
+                        height="112"
+                        srcset="
+                          img/catalog-items/mob-size/foodcan-fish-s-mob@2x.png 2x
+                        "
+                      />
+                    </picture>
                   </a>
                   <div class="catalog-item__information-wrapper">
                     <a class="catalog-item__title" href="#"
@@ -210,17 +275,33 @@
             <li class="catalog-list__item">
               <div class="catalog-item__size-fix catalog-item">
                 <div class="catalog-item__wrapper">
-                  <a
-                    class="catalog-item__img-link catalog-item-img-link"
-                    href="#"
-                  >
-                    <img
-                      class="catalog-item__img"
-                      src="img/foodcan-fish-l.png"
-                      alt="Питание Cat Energy Рыба 1000 грамм."
-                      width="84"
-                      height="101"
-                    />
+                  <a class="catalog-item__img-link" href="#">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/catalog-items/dt-size/foodcan-fish-l-dt.png    1x,
+                          img/catalog-items/dt-size/foodcan-fish-l-dt@2x.png 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/catalog-items/tab-size/foodcan-fish-l-tab.png    1x,
+                          img/catalog-items/tab-size/foodcan-fish-l-tab@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="catalog-item__img"
+                        src="img/catalog-items/mob-size/foodcan-fish-l-mob.png"
+                        alt="Питание Cat Energy Рыба 1000 грамм."
+                        width="140"
+                        height="112"
+                        srcset="
+                          img/catalog-items/mob-size/foodcan-fish-l-mob@2x.png 2x
+                        "
+                      />
+                    </picture>
                   </a>
                   <div class="catalog-item__information-wrapper">
                     <a class="catalog-item__title" href="#"
@@ -254,17 +335,33 @@
             <li class="catalog-list__item">
               <div class="catalog-item__size-fix catalog-item">
                 <div class="catalog-item__wrapper">
-                  <a
-                    class="catalog-item__img-link catalog-item-img-link"
-                    href="#"
-                  >
-                    <img
-                      class="catalog-item__img"
-                      src="img/foodcan-buckwheat-s.png"
-                      alt="Питание Cat Energy Гречка 500 грамм."
-                      width="68"
-                      height="78"
-                    />
+                  <a class="catalog-item__img-link" href="#">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/catalog-items/dt-size/foodcan-buckwheat-s-dt.png    1x,
+                          img/catalog-items/dt-size/foodcan-buckwheat-s-dt@2x.png 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/catalog-items/tab-size/foodcan-buckwheat-s-tab.png    1x,
+                          img/catalog-items/tab-size/foodcan-buckwheat-s-tab@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="catalog-item__img"
+                        src="img/catalog-items/mob-size/foodcan-buckwheat-s-mob.png"
+                        alt="Питание Cat Energy Гречка 500 грамм."
+                        width="140"
+                        height="112"
+                        srcset="
+                          img/catalog-items/mob-size/foodcan-buckwheat-s-mob@2x.png 2x
+                        "
+                      />
+                    </picture>
                   </a>
                   <div class="catalog-item__information-wrapper">
                     <a class="catalog-item__title" href="#"
@@ -298,17 +395,33 @@
             <li class="catalog-list__item">
               <div class="catalog-item__size-fix catalog-item">
                 <div class="catalog-item__wrapper">
-                  <a
-                    class="catalog-item__img-link catalog-item-img-link"
-                    href="#"
-                  >
-                    <img
-                      class="catalog-item__img"
-                      src="img/foodcan-buckwheat-l.png"
-                      alt="Питание Cat Energy Гречка 500 грамм."
-                      width="84"
-                      height="101"
-                    />
+                  <a class="catalog-item__img-link" href="#"
+                    ><picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/catalog-items/dt-size/foodcan-buckwheat-l-dt.png    1x,
+                          img/catalog-items/dt-size/foodcan-buckwheat-l-dt@2x.png 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/catalog-items/tab-size/foodcan-buckwheat-l-tab.png    1x,
+                          img/catalog-items/tab-size/foodcan-buckwheat-l-tab@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="catalog-item__img"
+                        src="img/catalog-items/mob-size/foodcan-buckwheat-l-mob.png"
+                        alt="Питание Cat Energy Гречка 1000 грамм."
+                        width="140"
+                        height="112"
+                        srcset="
+                          img/catalog-items/mob-size/foodcan-buckwheat-l-mob@2x.png 2x
+                        "
+                      />
+                    </picture>
                   </a>
                   <div class="catalog-item__information-wrapper">
                     <a class="catalog-item__title" href="#"
@@ -342,17 +455,33 @@
             <li class="catalog-list__item">
               <div class="catalog-item__size-fix catalog-item">
                 <div class="catalog-item__wrapper">
-                  <a
-                    class="catalog-item__img-link catalog-item-img-link"
-                    href="#"
-                  >
-                    <img
-                      class="catalog-item__img"
-                      src="img/foodcan-rice-s.png"
-                      alt="Питание Cat Energy Рис 500 грамм."
-                      width="72"
-                      height="84"
-                    />
+                  <a class="catalog-item__img-link" href="#">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          img/catalog-items/dt-size/foodcan-rice-s-dt.png    1x,
+                          img/catalog-items/dt-size/foodcan-rice-s-dt@2x.png 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          img/catalog-items/tab-size/foodcan-rice-s-tab.png    1x,
+                          img/catalog-items/tab-size/foodcan-rice-s-tab@2x.png 2x
+                        "
+                      />
+                      <img
+                        class="catalog-item__img"
+                        src="img/catalog-items/mob-size/foodcan-rice-s-mob.png"
+                        alt="Питание Cat Energy Рис 500 грамм."
+                        width="140"
+                        height="112"
+                        srcset="
+                          img/catalog-items/mob-size/foodcan-rice-s-mob@2x.png 2x
+                        "
+                      />
+                    </picture>
                   </a>
                   <div class="catalog-item__information-wrapper">
                     <a class="catalog-item__title" href="#"
@@ -542,7 +671,7 @@
             <a class="contacts__cat-energy-logo logo" href="#">
               <img
                 class="contacts__icon"
-                src="img/logo.svg"
+                src="img/logo-text.svg"
                 width="128"
                 height="24"
                 alt="Cat Energy."
