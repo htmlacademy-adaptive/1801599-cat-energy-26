@@ -9,8 +9,24 @@
 
 .contacts-social__item {
   margin-right: 28px;
+
+  &:active {
+    .opacity-strong;
+  }
 }
 
 .contacts-social__item:last-child {
   margin-right: 0;
+}
+
+.contacts-social__icon {
+  fill: #666666;
+}
+
+
+.contacts-social__link:hover .contacts-social__icon,
+.contacts-social__link:focus .contacts-social__icon,
+.contacts-social__link:focus {
+  fill: @primary;
+  outline-style: none;
 }
