@@ -99,14 +99,35 @@
 }
 
 .owner-info__icon {
-  position: absolute;
-  right: 14px;
+  &--email,
+  &--tel {
+    position: absolute;
+    right: 14px;
 
-  @media (min-width: @tablet-width) {
-    right: 15px;
-  }
+    @media (min-width: @tablet-width) {
+      right: 15px;
+    }
 
-  @media (min-width: @desktop-width) {
-    right: 17px;
+    @media (min-width: @desktop-width) {
+      right: 17px;
+    }
   }
+}
+
+.selection-form__input:focus + .owner-info__icon--email line,
+.selection-form__input:focus + .owner-info__icon--email path {
+  stroke: @primary;
+}
+
+.selection-form__input:invalid + .owner-info__icon--email line,
+.selection-form__input:invalid + .owner-info__icon--email path {
+  stroke: #ff8282;
+}
+
+.selection-form__input:focus + .owner-info__icon--tel path {
+  fill: @primary;
+}
+
+.selection-form__input:invalid + .owner-info__icon--tel path {
+  fill: #ff8282;
 }

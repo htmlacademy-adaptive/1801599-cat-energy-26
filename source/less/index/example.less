@@ -308,8 +308,12 @@
   margin-left: -12px;
 }
 
-.example__slider-control-toggler:hover ~ .example__slider-control-toggler-arrows {
+.example__slider-control:hover .example__slider-control-toggler-arrows path {
   fill: @primary;
+}
+
+.example__slider-control:active .example__slider-control-toggler-arrows path {
+  fill: rgba(94, 170, 47, 0.6);
 }
 
 .example__fat-cat-wrapper {

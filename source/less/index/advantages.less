@@ -191,9 +191,14 @@
   &:active {
     .opacity-strong;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.advantages__more:hover .advantages__more-icon {
+.advantages__more:hover .advantages__more-icon,
+.advantages__more:focus .advantages__more-icon {
   transform: scale(1.3, 1);
   transform-origin: left;
   transition: 0.4s;
