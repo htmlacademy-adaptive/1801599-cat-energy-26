@@ -1,15 +1,18 @@
 .contacts-social__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  min-width: 136px;
+  min-width: 49%;
+
+  @media (min-width: @tablet-width) {
+    min-width: 134px;
+  }
 }
 
 .contacts-social__item {
-  margin-right: 28px;
-
   &:active {
     .opacity-strong;
   }
@@ -17,6 +20,11 @@
 
 .contacts-social__item:last-child {
   margin-right: 0;
+}
+
+.contacts-social__link {
+  display: block;
+  min-width: 28px;
 }
 
 .contacts-social__icon {

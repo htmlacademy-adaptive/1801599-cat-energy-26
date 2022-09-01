@@ -4,13 +4,11 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 24px 30px;
-    width: 768px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     padding: 53px 110px 0;
-    width: 1440px;
   }
 }
 
@@ -27,11 +25,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  min-height: 64px;
+  min-height: 65px;
   margin: 0 auto;
   padding: 0 20px 6px;
-  width: 320px;
   box-sizing: border-box;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     min-height: auto;
@@ -56,6 +54,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin-left: auto;
 
   &:hover,
   &:focus {

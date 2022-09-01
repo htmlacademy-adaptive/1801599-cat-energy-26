@@ -113,6 +113,7 @@
                         name="cat"
                         id="name"
                         placeholder="БАРСИК"
+                        value="БАРСИК"
                         required
                       />
                     </label>
@@ -127,6 +128,7 @@
                         name="cat"
                         id="weight"
                         placeholder="7"
+                        value="7"
                         required
                       />
                     </label>
@@ -141,6 +143,7 @@
                         name="cat"
                         id="age"
                         placeholder="7"
+                        value="7"
                       />
                     </label>
                   </li>
@@ -153,46 +156,42 @@
                 <div class="programm-info__wrapper">
                   <ul class="selection-form__list programm-info__list">
                     <li class="selection-form__item programm-info__item">
-                      <label class="programm-info__control">
+                      <label class="programm-info__control radio">
                         <input
-                          class="visually-hidden programm-info__input"
+                          class="visually-hidden radio__input"
                           type="radio"
                           name="weight-type"
                           value="loss"
                           checked
                         />
-                        <span class="programm-info__mark"></span>
-                        <span class="programm-info__descriprtion"
-                          >Похудение</span
-                        >
+                        <span class="radio__mark"></span>
+                        <span class="radio__descriprtion">Похудение</span>
                       </label>
                     </li>
 
                     <li class="selection-form__item programm-info__item">
-                      <label class="programm-info__control">
+                      <label class="programm-info__control radio">
                         <input
-                          class="visually-hidden programm-info__input"
+                          class="visually-hidden radio__input"
                           type="radio"
                           name="weight-type"
                           value="gain"
                         />
-                        <span class="programm-info__mark"></span>
-                        <span class="programm-info__descriprtion"
-                          >Набор массы</span
-                        >
+                        <span class="radio__mark"></span>
+                        <span class="radio__descriprtion">Набор массы</span>
                       </label>
                     </li>
 
                     <li class="selection-form__item programm-info__item">
-                      <label class="programm-info__control">
+                      <label class="programm-info__control radio">
                         <input
-                          class="visually-hidden programm-info__input"
+                          class="visually-hidden radio__input"
                           type="radio"
                           name="weight-type"
                           value="not-sure"
                         />
-                        <span class="programm-info__mark"></span>
-                        <span class="programm-info__descriprtion"
+                        <span class="radio__mark"></span>
+                        <span class="radio__descriprtion"
                           >Не знаю (Нужен ваш совет)</span
                         >
                       </label>
@@ -208,7 +207,7 @@
           >
             <legend class="selection-form__legend owner-info__legend">
               <span
-                class="selection-form__legend-description page-layout__title-inner owner-info__page-layout-title-inner"
+                class="legend-description page-layout__title-inner owner-info__page-layout-title-inner"
                 >Контактные данные (владельца кота)</span
               >
             </legend>
@@ -223,6 +222,7 @@
                       name="email"
                       id="email"
                       placeholder="kuklachev@gmail.com"
+                      value="kuklachev@gmail.com"
                       required
                     />
                     <svg
@@ -280,6 +280,7 @@
                       name="telephone"
                       id="telephone"
                       placeholder="8 (960) 900-60-90"
+                      value="8 (960) 900-60-90"
                       required
                     />
                     <svg
@@ -322,7 +323,7 @@
           >
             <legend class="selection-form__legend comments__legend">
               <span
-                class="selection-form__legend-description comments__page-layout-title-inner page-layout__title-inner"
+                class="legend-description comments__page-layout-title-inner page-layout__title-inner"
                 >Комментарий</span
               >
             </legend>
@@ -342,7 +343,7 @@
           >
             <legend class="selection-form__legend additional__legend">
               <span
-                class="selection-form__legend-description page-layout__title-inner additional__page-layout-title-inner"
+                class="legend-description page-layout__title-inner additional__page-layout-title-inner"
                 >Дополнительно</span
               >
             </legend>
@@ -351,54 +352,52 @@
                 <li
                   class="selection-form__item additional__item additional__item"
                 >
-                  <label class="additional__label">
+                  <label class="additional__label checkbox">
                     <input
-                      class="visually-hidden additional__input"
+                      class="visually-hidden checkbox__input"
                       type="checkbox"
                       name="additional"
                       value="sweetener"
                       checked
                     />
-                    <span class="additional__mark"></span>
-                    <span class="additional__description"
-                      >сахарозаменитель</span
-                    >
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__description">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="selection-form__item additional__item">
-                  <label class="additional__label">
+                  <label class="additional__label checkbox">
                     <input
-                      class="visually-hidden additional__input"
+                      class="visually-hidden checkbox__input"
                       type="checkbox"
                       name="additional"
                       value="water"
                     />
-                    <span class="additional__mark"></span>
-                    <span class="additional__description">питьевая вода</span>
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__description">питьевая вода</span>
                   </label>
                 </li>
                 <li class="selection-form__item additional__item">
-                  <label class="additional__label">
+                  <label class="additional__label checkbox">
                     <input
-                      class="visually-hidden additional__input"
+                      class="visually-hidden checkbox__input"
                       type="checkbox"
                       name="additional"
                       value="milk"
                     />
-                    <span class="additional__mark"></span>
-                    <span class="additional__description">молоко</span>
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__description">молоко</span>
                   </label>
                 </li>
                 <li class="selection-form__item additional__item">
-                  <label class="additional__label">
+                  <label class="additional__label checkbox">
                     <input
-                      class="visually-hidden additional__input"
+                      class="visually-hidden checkbox__input"
                       type="checkbox"
                       name="additional"
                       value="vitamins"
                     />
-                    <span class="additional__mark"></span>
-                    <span class="additional__description">витамины</span>
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__description">витамины</span>
                   </label>
                 </li>
               </ul>
@@ -447,10 +446,10 @@
         </div>
       </section>
       <section class="main-footer__contacts contacts">
-        <div class="contacts__size-fix size-fix">
+        <ul class="contacts__size-fix size-fix">
           <h2 class="visually-hidden">Контактные данные.</h2>
-          <div class="contacts__cat-energy contacts-item">
-            <a class="contacts__cat-energy-logo logo" href="#">
+          <li class="contacts__cat-energy contacts-item">
+            <a class="contacts__cat-energy-logo logo" href="index.html">
               <img
                 class="contacts__icon"
                 src="img/logo-text.svg"
@@ -459,9 +458,9 @@
                 alt="Cat Energy."
               />
             </a>
-          </div>
+          </li>
 
-          <div class="contacts__social contacts-social contacts-item">
+          <li class="contacts__social contacts-social contacts-item">
             <ul class="contacts-social__list">
               <li class="contacts-social__item">
                 <a
@@ -521,9 +520,9 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </li>
 
-          <div class="contacts__copyright copyright contacts-item">
+          <li class="contacts__copyright copyright contacts-item">
             <a class="copyright__link" href="https://htmlacademy.ru/">
               <span class="copyright__name">HTML Academy</span>
               <svg
@@ -542,8 +541,8 @@
                 />
               </svg>
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </footer>
     <script src="js/script.js"></script>

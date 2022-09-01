@@ -27,7 +27,7 @@
 
 .example__size-fix {
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     padding-top: 43px;
@@ -106,10 +106,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 104px;
+    justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: flex-start;
     margin-bottom: 0;
   }
 }
@@ -195,7 +195,7 @@
 .example__results-cost {
   margin: 0;
   padding: 0;
-  flex-grow: 1;
+  width: 100%;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -207,6 +207,8 @@
     line-height: 20px;
     text-align: right;
     letter-spacing: 0.2px;
+    width: auto;
+    margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -239,10 +241,11 @@
 
 .example__slider {
   position: relative;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 560px;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {

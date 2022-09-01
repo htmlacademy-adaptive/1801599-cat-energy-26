@@ -1,0 +1,57 @@
+.checkbox {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox:hover .checkbox__mark,
+.checkbox:focus .checkbox__mark,
+.checkbox:active .checkbox__mark {
+  outline: none;
+  border: 1px solid #bababa;
+}
+
+.checkbox__mark {
+  .control-mark;
+  margin-right: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 19px;
+  }
+}
+
+.checkbox__input:checked + .checkbox__mark::before {
+  .control-mark-before;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/tale.svg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 26px;
+    height: 26px;
+    top: 18%;
+    left: 17%;
+  }
+}
+
+.checkbox__description {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.checkbox__input[disabled] ~ .checkbox__mark,
+.checkbox__input[disabled] ~ .checkbox__description {
+  cursor: auto;
+  opacity: 0.3;
+}

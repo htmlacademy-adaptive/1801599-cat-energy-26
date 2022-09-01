@@ -10,11 +10,11 @@
 
 .how-it-works__size-fix {
   padding-top: 20px;
-  padding-bottom: 53px;
+  padding-bottom: 47px;
 
   @media (min-width: @tablet-width) {
     padding-top: 45px;
-    padding-bottom: 45px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,10 +46,9 @@
   counter-reset: section;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 354px 1fr;
-    column-gap: 30px;
-    row-gap: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,16 +60,17 @@
 
 .how-it-works__item {
   padding-left: 80px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   position: relative;
+  min-height: 60px;
 
   &::before {
     content: "";
     position: absolute;
     width: 60px;
     height: 60px;
-    top: -2px;
+    top: -390px;
     left: 0;
     background-color: @primary;
 
@@ -108,7 +108,7 @@
       counter-increment: section;
       display: inline-block;
       position: absolute;
-      right: 0;
+      left: 115px;
       top: 0;
       font-size: 280px;
       width: auto;
@@ -124,8 +124,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 250px;
-    margin-bottom: 0;
+    width: 324px;
+    margin-bottom: 37px;
     padding-top: 151px;
     padding-bottom: 57px;
     padding-left: 0;
@@ -155,6 +155,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    max-width: 245px;
   }
 }
 

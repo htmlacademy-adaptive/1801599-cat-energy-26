@@ -1,0 +1,54 @@
+.radio {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio:hover .programm-info__mark,
+.radio:focus .programm-info__mark,
+.radio:active .programm-info__mark {
+  outline: none;
+  border: 1px solid #bababa;
+}
+
+.radio__descriprtion {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.radio__mark {
+  .control-mark;
+  border-radius: 50%;
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.radio__input:checked + .radio__mark::before {
+  .control-mark-before;
+  width: 14px;
+  height: 14px;
+  background-color: @primary;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.radio__input[disabled] ~ .radio__mark,
+.radio__input[disabled] ~ .radio__descriprtion {
+  cursor: auto;
+  opacity: 0.3;
+}

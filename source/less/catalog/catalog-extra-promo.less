@@ -1,11 +1,9 @@
 .catalog-extra-promo__size-fix {
-  width: 320px;
   margin: 0 auto;
-  padding: 35px 20px;
+  padding: 34px 20px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
     padding: 70px 30px 76px;
   }
 
@@ -31,7 +29,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 71px 124px 69px 422px;
+    padding-top: 71px;
+    padding-right: 15%;
+    padding-bottom: 69px;
+    padding-left: 60%;
     background-image: url("../img/extra-promo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -55,14 +56,15 @@
     width: 78px;
     height: 80px;
     top: 59px;
-    left: 101px;
+    left: 50%;
+    margin-left: -39px;
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: 100%;
 
     @media (min-width: @tablet-width) {
-      left: 78px;
+      left: 118px;
     }
 
     @media (min-width: @desktop-width) {
