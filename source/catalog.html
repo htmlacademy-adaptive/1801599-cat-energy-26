@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet" />
+    <link
+      rel="preload"
+      href="../fonts/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png" />
@@ -17,7 +24,7 @@
       <div class="page-header__wrapper">
         <div class="page-header__mobile-wrapper">
           <div class="page-header__size-fix">
-            <a class="page-header__logo logo" href="#">
+            <a class="page-header__logo logo" href="index.html">
               <picture>
                 <source
                   media="(min-width: 1440px)"
@@ -532,7 +539,7 @@
 
       <section class="catalog-extra catalog-extra__page-layout page-layout">
         <div class="catalog-extra__size-fix">
-          <h2 class="catalog-extra__title">
+          <h2 class="catalog-extra__title legend-description">
             <span
               class="page-layout__title-inner catalog-extra__page-layout-title-inner"
               >Дополнительные товары</span
@@ -665,10 +672,10 @@
         </div>
       </section>
       <section class="main-footer__contacts contacts">
-        <div class="contacts__size-fix size-fix">
-          <h2 class="visually-hidden">Контактные данные.</h2>
-          <div class="contacts__cat-energy contacts-item">
-            <a class="contacts__cat-energy-logo logo" href="#">
+        <h2 class="visually-hidden">Контактные данные.</h2>
+        <ul class="contacts__size-fix size-fix">
+          <li class="contacts__cat-energy contacts-item">
+            <a class="contacts__cat-energy-logo logo" href="index.html">
               <img
                 class="contacts__icon"
                 src="img/logo-text.svg"
@@ -677,9 +684,9 @@
                 alt="Cat Energy."
               />
             </a>
-          </div>
+          </li>
 
-          <div class="contacts__social contacts-social contacts-item">
+          <li class="contacts__social contacts-social contacts-item">
             <ul class="contacts-social__list">
               <li class="contacts-social__item">
                 <a
@@ -739,9 +746,9 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </li>
 
-          <div class="contacts__copyright copyright contacts-item">
+          <li class="contacts__copyright copyright contacts-item">
             <a class="copyright__link" href="https://htmlacademy.ru/">
               <span class="copyright__name">HTML Academy</span>
               <svg
@@ -760,8 +767,8 @@
                 />
               </svg>
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </footer>
     <script src="js/script.js"></script>

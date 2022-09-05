@@ -16,9 +16,10 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    padding-right: 124px;
+    padding-right: 110px;
+    width: calc(100% - 34px);
     margin: 0;
-    width: auto;
+    margin-left: auto;
   }
 }
 
@@ -38,59 +39,4 @@
 
 .programm-info__item:last-child {
   margin-bottom: 0;
-}
-
-.programm-info__control {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  cursor: pointer;
-}
-
-.programm-info__control:hover .programm-info__mark,
-.programm-info__control:focus .programm-info__mark,
-.programm-info__control:active .programm-info__mark {
-  outline: none;
-  border: 1px solid #bababa;
-}
-
-.programm-info__descriprtion {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.programm-info__mark {
-  .control-mark;
-  border-radius: 50%;
-  margin-right: 15px;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 20px;
-  }
-}
-
-.programm-info__input:checked + .programm-info__mark::before {
-  .control-mark-before;
-  width: 14px;
-  height: 14px;
-  background-color: @primary;
-  border-radius: 50%;
-
-  @media (min-width: @tablet-width) {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-.programm-info__input[disabled] ~ .programm-info__mark,
-.programm-info__input[disabled] ~ .programm-info__descriprtion {
-  cursor: auto;
-  opacity: 0.3;
 }
