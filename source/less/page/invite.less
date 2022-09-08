@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
   color: #111111;
   position: relative;
+  padding: 95px 0 107px 110px;
 
   &--main {
     background-color: #ffffff;
@@ -20,13 +21,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 110px;
+    position: relative;
     padding: 58px 80px;
-    min-width: 565px;
+    max-width: 565px;
     min-height: 198px;
     background-color: #ffffff;
+    z-index: 99;
+    margin: 0;
   }
 }
 
@@ -83,6 +84,16 @@
   }
 }
 
+// .invite__map-wrapper {
+//   @media (min-width: @desktop-width) {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+
 .invite__map {
   display: block;
   border: none;
@@ -90,6 +101,14 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    height: 400px;
+    height: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 }

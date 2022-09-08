@@ -54,7 +54,7 @@
               class="page-header__toggle page-header__toggle--close page-header__toggle--opened page-header__toggle--nojs"
               type="button"
             >
-              <span class="visually-hidden">Меню</span>
+              <span class="visually-hidden">Открыть или закрыть меню</span>
             </button>
           </div>
         </div>
@@ -101,12 +101,14 @@
 
     <main class="main-page">
       <section class="main-page__promo promo">
-        <div class="promo__size-fix size-fix">
+        <div class="promo__size-fix">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__description">Занялся собой? Займись котом!</p>
-          <button class="promo__button button--primary button" type="button">
+        </div>
+        <div class="promo__button-wrapper">
+          <a class="promo__button button--primary button" href="form.html">
             подобрать программу
-          </button>
+          </a>
         </div>
       </section>
       <section class="advantages">
@@ -190,89 +192,91 @@
       </section>
       <section class="example">
         <div class="example__size-fix size-fix">
-          <div class="example__main">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по&#8209;прежнему спит по 16
-              часов в день.
-            </p>
-            <ul class="example__results">
-              <li class="example__results-main">
-                <span class="example__results-main-label"
-                  ><span class="example__results-main-label-inner"
-                    >снижение веса</span
-                  ></span
-                >
-                5 кг
-              </li>
-              <li class="example__results-main">
-                <span class="example__results-main-label"
-                  ><span class="example__results-main-label-inner"
-                    >затрачено времени</span
-                  ></span
-                >
-                60 дней
-              </li>
-              <li class="example__results-cost">
-                <span class="example__results-cost-label"
-                  >Затраты на питание:</span
-                >
-                <span class="example__results-cost-value">15 000 руб.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="example__slider">
-            <div class="example__slider-control">
-              <button class="example__slider-control-toggler" type="button">
-                <svg
-                  class="example__slider-control-toggler-arrows"
-                  width="24"
-                  height="18"
-                  viewBox="0 0 24 18"
-                  fill="red"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M8 0L0 9L8 18V0Z" fill="#666666" />
-                  <path d="M24 9L16 0V18L24 9Z" fill="#666666" />
-                </svg>
-              </button>
+          <h2 class="example__title">Живой пример</h2>
+          <div class="example__wrapper">
+            <div class="example__main">
+              <p class="example__description">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих
+                тренировок! При этом он не менял своих привычек и
+                по&#8209;прежнему спит по 16 часов в день.
+              </p>
+              <ul class="example__results">
+                <li class="example__results-main">
+                  <span class="example__results-main-label"
+                    ><span class="example__results-main-label-inner"
+                      >снижение веса</span
+                    ></span
+                  >
+                  5 кг
+                </li>
+                <li class="example__results-main">
+                  <span class="example__results-main-label"
+                    ><span class="example__results-main-label-inner"
+                      >затрачено времени</span
+                    ></span
+                  >
+                  60 дней
+                </li>
+                <li class="example__results-cost">
+                  <span class="example__results-cost-label"
+                    >Затраты на питание:</span
+                  >
+                  <span class="example__results-cost-value">15 000 руб.</span>
+                </li>
+              </ul>
             </div>
-            <div class="example__fat-cat-wrapper">
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="img/fat-cat-tab.png 1x, img/fat-cat-tab@2x.png 2x"
-                />
-                <img
-                  class="example__fat-cat"
-                  src="img/fat-cat-mob.png"
-                  alt="Толстый кот, пример до."
-                  width="280"
-                  height="256"
-                  srcset="img/fat-cat-mob@2x.png 2x"
-                />
-              </picture>
-            </div>
-            <div class="example__skinny-cat-wrapper">
-              <picture>
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/skinny-cat-tab.png    1x,
-                    img/skinny-cat-tab@2x.png 2x
-                  "
-                />
-                <img
-                  class="example__skinny-cat"
-                  src="img/skinny-cat-mob.png"
-                  alt="Худой кот, пример после."
-                  width="280"
-                  height="256"
-                  srcset="img/skinny-cat-mob@2x.png 2x"
-                />
-              </picture>
+            <div class="example__slider">
+              <div class="example__slider-control">
+                <button class="example__slider-control-toggler" type="button">
+                  <svg
+                    class="example__slider-control-toggler-arrows"
+                    width="24"
+                    height="18"
+                    viewBox="0 0 24 18"
+                    fill="red"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M8 0L0 9L8 18V0Z" fill="#666666" />
+                    <path d="M24 9L16 0V18L24 9Z" fill="#666666" />
+                  </svg>
+                </button>
+              </div>
+              <div class="example__fat-cat-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/fat-cat-tab.png 1x, img/fat-cat-tab@2x.png 2x"
+                  />
+                  <img
+                    class="example__fat-cat"
+                    src="img/fat-cat-mob.png"
+                    alt="Толстый кот, пример до."
+                    width="280"
+                    height="256"
+                    srcset="img/fat-cat-mob@2x.png 2x"
+                  />
+                </picture>
+              </div>
+              <div class="example__skinny-cat-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/skinny-cat-tab.png    1x,
+                      img/skinny-cat-tab@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="example__skinny-cat"
+                    src="img/skinny-cat-mob.png"
+                    alt="Худой кот, пример после."
+                    width="280"
+                    height="256"
+                    srcset="img/skinny-cat-mob@2x.png 2x"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
