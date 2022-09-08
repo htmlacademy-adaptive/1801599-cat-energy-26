@@ -26,11 +26,10 @@
 
 .example__size-fix {
   padding-top: 25px;
-  padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     padding-top: 43px;
-    padding-bottom: 99px;
+    padding-bottom: 0;
     position: relative;
   }
 
@@ -40,13 +39,23 @@
 }
 
 .example__wrapper {
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 100px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     background-color: #eaeaea;
-    padding: 70px 110px 67px;
+    padding: 70px 0 67px;
   }
+}
+
+.example__wrapper-fixer {
+  position: relative;
 }
 
 .example__main {
@@ -259,7 +268,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     margin: 0;
-    bottom: 84px;
+    bottom: 17px;
     right: 110px;
   }
 }
