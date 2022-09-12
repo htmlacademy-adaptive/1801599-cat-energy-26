@@ -1,9 +1,10 @@
 .copyright__link {
-  min-width: 100%;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  cursor: auto;
 
   &:active {
     .opacity-strong;
@@ -11,10 +12,6 @@
 
   &:focus {
     outline: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    min-width: 164px;
   }
 }
 
@@ -25,6 +22,16 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-right: 24px;
+  }
+}
+
+.copyright__icon {
+  cursor: pointer;
 }
 
 .copyright__link:hover .copyright__icon path,

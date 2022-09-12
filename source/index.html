@@ -12,6 +12,13 @@
       as="font"
       crossorigin="anonymous"
     />
+    <link
+      rel="preload"
+      href="../fonts/oswaldmedium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png" />
@@ -101,11 +108,11 @@
 
     <main class="main-page">
       <section class="main-page__promo promo">
-        <div class="promo__size-fix">
+        <div class="promo__size-fix size-fix">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__description">Занялся собой? Займись котом!</p>
         </div>
-        <div class="promo__button-wrapper">
+        <div class="promo__button-wrapper size-fix">
           <a class="promo__button button--primary button" href="form.html">
             подобрать программу
           </a>
@@ -193,7 +200,9 @@
       <section class="example">
         <div class="example__size-fix size-fix">
           <h2 class="example__title">Живой пример</h2>
-          <div class="example__wrapper">
+        </div>
+        <div class="example__wrapper">
+          <div class="example__wrapper-fixer size-fix">
             <div class="example__main">
               <p class="example__description">
                 Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
@@ -203,20 +212,20 @@
               </p>
               <ul class="example__results">
                 <li class="example__results-main">
+                  <span class="example__results-main-inner">5 кг</span>
                   <span class="example__results-main-label"
                     ><span class="example__results-main-label-inner"
                       >снижение веса</span
                     ></span
                   >
-                  5 кг
                 </li>
                 <li class="example__results-main">
+                  <span class="example__results-main-inner">60 дней</span>
                   <span class="example__results-main-label"
                     ><span class="example__results-main-label-inner"
                       >затрачено времени</span
                     ></span
                   >
-                  60 дней
                 </li>
                 <li class="example__results-cost">
                   <span class="example__results-cost-label"
@@ -288,25 +297,25 @@
     <footer class="main-footer">
       <section class="main-footer__invite invite invite--main">
         <div class="invite__size-fix size-fix">
-          <h2 class="invite__title">
-            приглашаем<br />к сотрудничеству дилеров!
-          </h2>
-          <address class="invite__description">
-            ул. Большая Конюшенная, д. 19/8
-            <span class="invite__city">Санкт-Петербург</span>
-          </address>
+          <div class="invite__wrapper">
+            <h2 class="invite__title">
+              приглашаем<br />к сотрудничеству дилеров!
+            </h2>
+            <address class="invite__description">
+              ул. Большая Конюшенная, д. 19/8
+              <span class="invite__city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
-        <div class="invite__map-wrapper">
-          <iframe
-            class="invite__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5940700988788!2d30.32169020073727!3d59.93887771198798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2srs!4v1660862167170!5m2!1sru!2srs"
-            width="320"
-            height="362"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+        <iframe
+          class="invite__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5940700988788!2d30.32169020073727!3d59.93887771198798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2srs!4v1660862167170!5m2!1sru!2srs"
+          width="320"
+          height="362"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
       <section class="main-footer__contacts contacts">
         <h2 class="visually-hidden">Контактные данные.</h2>
