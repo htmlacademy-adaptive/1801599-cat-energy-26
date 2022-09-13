@@ -9,6 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 245px;
     padding: 0 35px 40px 40px;
   }
 }
@@ -108,6 +109,11 @@
     line-height: 24px;
     margin-bottom: 13px;
   }
+
+  @media (min-width: @desktop-width) {
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
 }
 
 .catalog-item__img-link {
@@ -178,7 +184,10 @@
 
   @media (min-width: @desktop-width) {
     margin-left: -5px;
-    width: auto;
+    max-width: 100%;
     padding: 10px 53px;
+    display: block;
+    box-sizing: border-box;
+    word-wrap: break-word;
   }
 }
