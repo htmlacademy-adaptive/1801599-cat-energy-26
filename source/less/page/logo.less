@@ -18,12 +18,13 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    width: 174px;
+    width: 61px;
     height: auto;
+    margin-right: 12px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 202px;
+    width: 72px;
   }
 }
 
@@ -35,6 +36,14 @@
   margin-top: -9px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    position: static;
+    margin-left: 0;
+    margin-top: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 9px;
+    height: 22px;
+    width: 118px;
   }
 }
