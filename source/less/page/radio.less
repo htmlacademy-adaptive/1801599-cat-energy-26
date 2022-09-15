@@ -6,10 +6,12 @@
 }
 
 .radio:hover .radio__mark,
-.radio:focus-within .radio__mark,
 .radio:active .radio__mark {
-  outline: none;
   border: 1px solid #bababa;
+}
+
+.radio:focus-within .radio__mark {
+  outline: @primary;
 }
 
 .radio__descriprtion {
@@ -49,6 +51,7 @@
 
 .radio__input:checked:focus + .radio__mark {
   border: 1px solid #bababa;
+  outline: 1px solid @primary;
 }
 
 .radio__input[disabled] ~ .radio__mark,

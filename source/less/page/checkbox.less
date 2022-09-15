@@ -6,9 +6,12 @@
 }
 
 .checkbox:hover .checkbox__mark,
-.checkbox:focus-within .checkbox__mark,
 .checkbox:active .checkbox__mark {
-  outline: none;
+  border: 1px solid #bababa;
+}
+
+.checkbox:focus-within .checkbox__mark {
+  outline: 1px solid @primary;
   border: 1px solid #bababa;
 }
 
@@ -40,6 +43,7 @@
 
 .checkbox__input:checked:focus + .checkbox__mark {
   border: 1px solid #bababa;
+  outline: 1px solid @primary;
 }
 
 .checkbox__description {
