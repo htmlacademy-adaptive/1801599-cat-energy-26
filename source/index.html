@@ -27,7 +27,7 @@
   <body class="page__body">
     <!-- Шапка -->
 
-    <header class="page-header">
+    <header class="page-header page-header--main">
       <div class="page-header__wrapper">
         <div class="page-header__mobile-wrapper">
           <div class="page-header__size-fix">
@@ -238,6 +238,10 @@
             <div class="example__slider">
               <div class="example__slider-control">
                 <button class="example__slider-control-toggler" type="button">
+                  <span class="visually-hidden"
+                    >Кнопка перемещения ползунка для просмотра результата до и
+                    после</span
+                  >
                   <svg
                     class="example__slider-control-toggler-arrows"
                     width="24"
@@ -254,6 +258,16 @@
               <div class="example__fat-cat-wrapper">
                 <picture>
                   <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="img/fat-cat-tab.webp 1x, img/fat-cat-tab@2x.webp 2x"
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="img/fat-cat-mob.webp 1x, img/fat-cat-mob@2x.webp 2x"
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="img/fat-cat-tab.png 1x, img/fat-cat-tab@2x.png 2x"
                   />
@@ -269,6 +283,22 @@
               </div>
               <div class="example__skinny-cat-wrapper">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/skinny-cat-tab.webp    1x,
+                      img/skinny-cat-tab@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      img/skinny-cat-mob.webp    1x,
+                      img/skinny-cat-mob@2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="

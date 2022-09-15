@@ -60,6 +60,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  word-wrap: break-word;
 
   &:hover,
   &:focus,
@@ -123,5 +124,9 @@
 
   @media (min-width: @tablet-width) {
     padding: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-self: center;
   }
 }
